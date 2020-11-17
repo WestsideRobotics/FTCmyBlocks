@@ -28,7 +28,6 @@ public class SampleMyBlocks_v04 extends BlocksOpModeCompanion {
         tooltip = "Robot A convert inches to encoder counts",
         parameterLabels = "Drive Distance (inches)"
         )
-    
     // This is a myBlock method with one input and one output.
     // The keyword 'final' indicates a Java constant: a variable that cannot change value.
     // Java constants are traditionally ALL CAPS.
@@ -46,7 +45,6 @@ public class SampleMyBlocks_v04 extends BlocksOpModeCompanion {
         tooltip = "Robot B convert inches to encoder counts",
         parameterLabels = "Drive Distance (inches)"
         )
-    
     // This is another myBlock method, also with one input and one output.
     // Both myBlocks will appear in the Blocks menu for this Java Class.
     public static int inchesToCountsRobotB (double inchesToDriveB) {

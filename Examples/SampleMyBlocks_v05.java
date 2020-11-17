@@ -60,7 +60,6 @@ public class SampleMyBlocks_v05 extends BlocksOpModeCompanion {
     tooltip = "Write number to file on RC device.",
     parameterLabels = {"Number to Write", "Full Filename (.txt)"}
     )
-    
     // This myBlock method writes a number (as text) to a file.
     // It has 2 inputs and no outputs (keyword void).
     public static void writeToFile (double myNumber, String toFileName) {
@@ -85,7 +84,6 @@ public class SampleMyBlocks_v05 extends BlocksOpModeCompanion {
     tooltip = "Read number from file on RC device.",
     parameterLabels = "Full Filename (.txt)"
     )
-    
     // This myBlock method reads a number (as text) from a file.
     // It has 1 input and 1 output (type double).
     public static double readFromFile (String fromFileName) {

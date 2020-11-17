@@ -25,7 +25,6 @@ public class SampleMyBlocks_v02 extends BlocksOpModeCompanion {
     tooltip = "Wiggle a user-designated servo.",
     parameterLabels = {"Servo name", "Duration (milliseconds)", "Number of cycles"}
     )
-    
     // this is a myBlock method with 3 inputs and no outputs (void)
     public static void wiggleServo (String servoName, int duration, int cycles) {
 

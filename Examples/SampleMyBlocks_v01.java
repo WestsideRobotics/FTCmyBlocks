@@ -11,7 +11,6 @@ public class SampleMyBlocks extends BlocksOpModeCompanion {
     tooltip = "Wiggle a user-designated servo.",
     parameterLabels = {"Servo name", "Duration (milliseconds)", "Number of cycles"}
     )
-    
     public static void wiggleServo (String servoName, int duration, int cycles) {
 
         Servo myServo = hardwareMap.get(Servo.class, servoName);

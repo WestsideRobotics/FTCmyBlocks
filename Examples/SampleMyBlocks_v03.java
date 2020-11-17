@@ -19,7 +19,6 @@ public class SampleMyBlocks_v03 extends BlocksOpModeCompanion {
     comment = "Place this myBlock inside a 'repeat loop'. Press button X to reset timer.",
     tooltip = "Stopwatch on gamepad button X."
     )
-
     public static void stopwatchX()  {      // myBlock method "stopwatchX"
         
         telemetry.addData("Stopwatch timer", "%.2f", myStopwatch.time());

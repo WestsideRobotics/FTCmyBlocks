@@ -11,9 +11,8 @@ public class SampleMyBlocks_v01 extends BlocksOpModeCompanion {
     tooltip = "Greet a person or group.",
     parameterLabels = {"Recipient"}
 )
-
 public static String myGreeting (String greetingRecipient)  {
     return ("Hello " + greetingRecipient + "!");
-}
+	}
 
 }
