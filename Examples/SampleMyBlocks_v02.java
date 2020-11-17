@@ -2,7 +2,7 @@
 This is a sample Java program for an FTC myBlocks tutorial.  This class
 contains methods that define myBlocks for FTC Blocks programming.
 
-Demonstrates using 5 of the 6 classes inherited from BlocksOpModeCompanion:
+Demonstrates using 5 of the 6 objects inherited from BlocksOpModeCompanion:
 linearOpMode, hardwareMap, telemetry, gamepad1, gamepad2.
 
 Each of these 5 objects allows direct/convenient use of its commands (methods).
@@ -21,7 +21,8 @@ public class SampleMyBlocks_v02 extends BlocksOpModeCompanion {
 
     // annotation required for method to be a myBlock; 3 features optional
     @ExportToBlocks (
-    comment = "Move a conventional servo back and forth. Assumes servo starts from position 0. Servo name must be in the active configuration.",
+    comment = "Move a conventional servo back and forth. Assumes servo starts" +
+              " from position 0. Servo name must be in the active configuration.",
     tooltip = "Wiggle a user-designated servo.",
     parameterLabels = {"Servo name", "Duration (milliseconds)", "Number of cycles"}
     )
@@ -47,10 +48,11 @@ public class SampleMyBlocks_v02 extends BlocksOpModeCompanion {
                   // empty while loop, waiting for operator input
                 }   
     
-        // wiggle the servo using specified duration and cycles
-        for (int i = 1; i <= cycles; i++)  {       // count up to 'cycles'
+        // Wiggle the servo using specified duration and cycles,
+        // and while the opMode was not stopped.
+        for (int i = 0; i < cycles && linearOpMode.opModeIsActive(); i++)  {
 
-            telemetry.addData("Servo current cycle", i);
+            telemetry.addData("Servo current cycle", i+1);
             telemetry.update();             // display progress to user
 
             myServo.setPosition(0.5);       // move servo clockwise

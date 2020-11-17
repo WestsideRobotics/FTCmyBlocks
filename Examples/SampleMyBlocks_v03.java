@@ -12,21 +12,21 @@ import org.firstinspires.ftc.robotcore.external.ExportToBlocks;
 
 public class SampleMyBlocks_v03 extends BlocksOpModeCompanion {
 
-    // declare the timer object, outside the method
     private static ElapsedTime myStopwatch = new ElapsedTime();
 
     @ExportToBlocks (
-    comment = "Place this myBlock inside a 'repeat loop'. Press button X to reset timer.",
+    comment = "Place this myBlock inside a 'repeat loop'. Press button X" +
+              " to reset timer.",
     tooltip = "Stopwatch on gamepad button X."
     )
-    public static void stopwatchX()  {      // myBlock method "stopwatchX"
+    public static void stopwatchX()  {
         
         telemetry.addData("Stopwatch timer", "%.2f", myStopwatch.time());
         telemetry.addData("To reset stopwatch", "press button X");
-        telemetry.update();                 // display message on DS screen
+        telemetry.update();           
         
-        if (gamepad1.x || gamepad2.x)  {    // press button X, either gamepad
-            myStopwatch.reset();            // reset the timer
+        if (gamepad1.x || gamepad2.x)  {    
+            myStopwatch.reset();            
         }
    
     }   // end of method stopwatchX()

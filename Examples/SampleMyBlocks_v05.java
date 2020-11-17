@@ -56,7 +56,7 @@ public class SampleMyBlocks_v05 extends BlocksOpModeCompanion {
     // It's optional to add a comment, tooltip, and/or parameterLabels.
     // Comment must appear on a single line, no rollovers.
     @ExportToBlocks (
-    comment = "Writes a number to specified file on RC device.  Includes telemetry.",
+    comment = "Writes a number to specified file on RC device. Includes telemetry.",
     tooltip = "Write number to file on RC device.",
     parameterLabels = {"Number to Write", "Full Filename (.txt)"}
     )
@@ -80,7 +80,8 @@ public class SampleMyBlocks_v05 extends BlocksOpModeCompanion {
 
 
     @ExportToBlocks (
-    comment = "Reads and returns a number from a specified file on RC device.  Use Blocks telemetry if needed.",
+    comment = "Reads and returns a number from a specified file on RC device." +
+              " Use Blocks telemetry if needed.",
     tooltip = "Read number from file on RC device.",
     parameterLabels = "Full Filename (.txt)"
     )

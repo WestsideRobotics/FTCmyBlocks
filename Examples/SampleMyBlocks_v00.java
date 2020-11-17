@@ -4,7 +4,7 @@ import org.firstinspires.ftc.robotcore.external.BlocksOpModeCompanion;
 import org.firstinspires.ftc.robotcore.external.ExportToBlocks;
 
 
-public class SampleMyBlocks_v01 extends BlocksOpModeCompanion {
+public class SampleMyBlocks_v00 extends BlocksOpModeCompanion {
 
 @ExportToBlocks (
     comment = "Here is a greeting for you.",
@@ -13,6 +13,6 @@ public class SampleMyBlocks_v01 extends BlocksOpModeCompanion {
 )
 public static String myGreeting (String greetingRecipient)  {
     return ("Hello " + greetingRecipient + "!");
-	}
+}
 
 }
