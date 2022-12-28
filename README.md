@@ -1,2 +1,1 @@
-# FTCmyBlocks
-Contains a wiki with tutorial on FTC myBlocks.
+Contains a [**wiki tutorial**](https://github.com/WestsideRobotics/FTCmyBlocks/wiki) on custom FTC Blocks (myBlocks).
